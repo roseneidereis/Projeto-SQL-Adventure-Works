@@ -2,7 +2,7 @@
 Esse é um projeto de análise de dados desenvolvido com SQL para analisar o comportamento de vendas de uma empresa fictícia chamada Adventure Works que vende bicicletas, peças e acessórios. 
 <br><br>
 ## O Problema
-Os tomadores de decisão da Adventure Works decidiram elaborar o planejamento de vendas da empresa, mas necesitavam obter algumas informações importantes para efetuar as previsões de vendas e de ações de marketing. Dessa maneira, efeturaram algumas perguntas sobre o comportamento de vendas da empresa. Eles queriam saber a quantidade de clientes distintos, o total de vendas, a média de vendas, o total de vendas por ano, o total de vendas por país para saber qual país vendeu mais, e o total de vendas por produto para saber qual produto vendeu mais.
+Os tomadores de decisão da Adventure Works decidiram elaborar o planejamento de vendas da empresa, mas necessitavam obter algumas informações importantes para efetuar as previsões de vendas e decidir ações de marketing. Dessa maneira, efetuaram algumas perguntas sobre o comportamento das vendas no período entre 2011 e 2014. Eles queriam saber a quantidade de clientes distintos, o total de vendas, a média de vendas, o total de vendas por ano, o total de vendas por país para saber qual país vendeu mais, e o total de vendas por produto para saber qual produto vendeu mais.
 <br><br>
 ## Fonte de Dados
 Banco de Dados: AdventureWordsDW2022 contendo todas a informações necessárias para a análise.
