@@ -109,11 +109,11 @@ ORDER BY SUM(F.SalesAmount) DESC;
 <br><br>
 ## Resultado 
 •	Quantidade de clientes distintos: 1484
-<br>
+<br><br>
 •	Total de Vendas: US$29,358,677.22
-<br>
+<br><br>
 •	Média de Vendas: US$486.09
-<br>
+<br><br>
 •	Total de Vendas por ano: 
 <br>
 2014 - US$297,163.11 
@@ -123,7 +123,21 @@ ORDER BY SUM(F.SalesAmount) DESC;
 2012 - US$5,801,073.27 
 <br>
 2011 - US$6,978,820.71 
+<br><br>
+•	Total de Vendas por país: 
 <br>
+United States = US$9,389,789.51
+<br>
+Australia = US$9,061,000.58
+<br>
+United Kingdom = US$3,391,712.21
+<br>
+France = US$2,644,017.71
+<br>
+Canada = US$1,977,844.86
+<br><br>
+O país que mais vendeu foi os United States.
+<br><br>
 •	Total de Vendas por produto: o produto que mais vendeu foi o o Road-150 Red, 48 que chegou em total de US$1,205,876.99.
 <br><br>
 ## Recomendação 
