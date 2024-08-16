@@ -18,10 +18,94 @@ Tabela DimCustomer: fornece informações sobre os clientes.
 Tabela:DimSalesTerritory fornece informações sobre os locais de vendas.
 <br><br>
 ## Preparação do Dados
-A exploração dos dados foi realizada para entender a estrutura das tabelas e tipos de dados, afim de localizar e conhecer as informações necessárias que seriam trabalhadas durante as consultas. 
+A exploração dos dados foi realizada para entender a estrutura das tabelas e tipos de dados, afim de localizar e conhecer as informações necessárias que seriam trabalhadas durante as consultas.
+<br><br>
+**Código da consulta da tabela FactInternetSales no banco dde Dados AdventureWorksDW2022:**
+<br>
+USE AdventureWorksDW2022
+<br>
+SELECT TOP 100
+<br>
+	*
+ <br>
+FROM FactInternetSales
 <br><br>
 ## Análise Exploratória
 Aplicada análise descrita com estatística básica para calcular as métricas que respondem as perguntas dos tomadores de decisão da empresa: contagem de clientes distintos, total de vendas, média de vendas, total de vendas por ano, total de vendas por país e total de vendas por produto. 
+<br><br>
+**Código do cálculo da Quantidade de Clientes Distintos:**
+<br> 
+SELECT 
+<br>
+	COUNT(DISTINCT CustomerKey) AS DistinctCustomerCount
+ <br>
+FROM FactInternetSales
+<br><br>
+**Código do cálculo ddo Valor Total de Vendas:**
+<br> 
+SELECT
+<br>
+	FORMAT(SUM(F.SalesAmount), 'C', 'en-US') AS TotalVendas
+ <br>
+FROM FactInternetSales AS F
+<br><br>
+**Código do cálculo da Média de Vendas:**
+<br>
+SELECT 
+<br>
+	FORMAT(AVG(F.SalesAmount), 'C', 'en-US') AS MediaVendas
+ <br>
+FROM FactInternetSales AS F
+<br><br>
+**Código do cálculo do Total de Vendas por Ano:**
+<br>
+SELECT 
+ <br>
+	D.CalendarYear,
+ <br>
+	FORMAT(SUM(SalesAmount), 'C', 'en-US') AS 'TotalVendas'
+ <br>
+FROM FactInternetSales S
+<br>
+INNER JOIN DimDate D ON D.DateKey = S.ShipDateKey
+<br>
+GROUP BY D.CalendarYear
+<br><br>
+**Código do cálculo do Total de Vendas por País:**
+<br>
+SELECT
+<br>
+    T.SalesTerritoryCountry,
+    <br>
+    FORMAT(SUM(SalesAmount), 'C', 'en-US') AS TotalVendas
+    <br>
+FROM FactInternetSales S
+<br>
+INNER JOIN DimDate D ON D.DateKey = S.ShipDateKey
+<br>
+INNER JOIN DimSalesTerritory T ON T.SalesTerritoryKey = S.SalesTerritoryKey
+<br>
+GROUP BY T.SalesTerritoryCountry
+<br>
+ORDER BY TotalVendas DESC;
+<br><br>
+**Código do cálculo do Total de Vendas por Produto:**
+<br>
+SELECT
+<br>
+    P.ProductKey,
+    <br>
+    P.EnglishProductName AS Produto,
+    <br>
+    FORMAT(SUM(F.SalesAmount), 'C', 'en-US') AS TotalVendas
+    <br>
+FROM FactInternetSales AS F
+<br>
+INNER JOIN DimProduct AS P ON F.ProductKey = P.ProductKey
+<br>
+GROUP BY P.ProductKey, P.EnglishProductName
+<br>
+ORDER BY SUM(F.SalesAmount) DESC;
 <br><br>
 ## Resultado 
 •	Quantidade de clientes distintos: 1484
