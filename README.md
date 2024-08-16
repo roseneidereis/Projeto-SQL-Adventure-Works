@@ -31,6 +31,7 @@ Aplicada análise descrita com estatística básica para calcular as métricas q
 •	Média de Vendas: US$486.09
 <br>
 •	Total de Vendas por ano: 
+<br>
 2014 - US$297,163.11 
 <br>
 2013 - US$16,281,620.14
