@@ -32,8 +32,11 @@ Aplicada análise descrita com estatística básica para calcular as métricas q
 <br>
 •	Total de Vendas por ano: 
 2014 - US$297,163.11 
+<br>
 2013 - US$16,281,620.14
+<br>
 2012 - US$5,801,073.27 
+<br>
 2011 - US$6,978,820.71 
 <br>
 •	Total de Vendas por produto: o produto que mais vendeu foi o o Road-150 Red, 48 que chegou em total de US$1,205,876.99.
