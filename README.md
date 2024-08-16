@@ -138,9 +138,16 @@ Canada = US$1,977,844.86
 <br><br>
 O país que mais vendeu foi os United States.
 <br><br>
-•	Total de Vendas por produto: o produto que mais vendeu foi o o Road-150 Red, 48 que chegou em total de US$1,205,876.99.
+•	Total de Vendas por produto: a empresa tem um total de 158 produtos, sendo o "Road-150 Red, 48" o produto mais vendido com o total de US$1,205,876.99 e o "Racing Socks, L" o produto menos vendido com o total de US$2,427.30.
 <br><br>
 ## Recomendação 
+<br>
+Algumas recomendações aos tomadores de decisão, considerando os resultados da análise, são:
+<br><br>
+•	Fazer ações de marketing digital do produto mais vendido (Road-150 Red, 48) nos demais países analisando o retorno para verificar a possibilidade de alavancar as vendas.
+<br><br>
+•	Verificar o ciclo de vida do produto menos vendido (Racing Socks, L) para uma possível descontinuação, inovação ou criação de um novo produto compatível.
+<br><br>
 
 
 
